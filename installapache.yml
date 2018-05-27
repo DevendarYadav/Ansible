@@ -2,7 +2,7 @@
 - hosts: webserver
   become: yes
   tasks:
-  - name: package update
+  - name: update packages
     apt:
       update_cache: yes
   - name: install apache
