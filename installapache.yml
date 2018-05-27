@@ -2,10 +2,7 @@
 - hosts: webserver
   become: sudo
   tasks:
-  - name: update packages
-    apt:
-      update_cache: yes
-  - name: install apache
+   - name: install apache
     apt:
       name: apache2
       state: present
