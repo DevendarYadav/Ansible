@@ -2,5 +2,5 @@
  - hosts: ip
    gather_facts: yes 
    tasks:
-    - name: ping the hosts
-      ping:
+    - name: ping the webservers and appservers
+      ping: webservers,appservers
