@@ -3,4 +3,4 @@
    gather_facts: yes 
    tasks:
     - name: ping the webservers and appservers
-      ping: 
+      ping: webservers
