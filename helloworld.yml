@@ -1,6 +1,6 @@
 ---
- - hosts: ip
+ - hosts: webserver,appserver
    gather_facts: yes 
    tasks:
     - name: ping the webservers and appservers
-      ping: webservers
+      ping: 
