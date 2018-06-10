@@ -1,5 +1,5 @@
 ---
-- hosts: webserver
+- hosts: webserver,appserver
   gather_facts: yes
   tasks:
   - name: ping with playbook
