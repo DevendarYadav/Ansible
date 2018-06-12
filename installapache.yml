@@ -5,17 +5,17 @@
 - name: update packages for Debian
   apt:
     update_cache: yes
- - name: uninstall apache first
-   apt: 
-     name: apache2
-     state: absent
- - name: install apache on webserver
-   apt:
-     name: apache2
-     state: present
- - name: Restart apache
-   service:
-     name: apache2
-     state: restarted
+- name: uninstall apache first
+  apt: 
+    name: apache2
+    state: absent
+- name: install apache on webserver
+  apt:
+    name: apache2
+    state: present
+- name: Restart apache
+  service:
+    name: apache2
+    state: restarted
      
    
