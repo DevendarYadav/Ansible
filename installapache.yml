@@ -11,8 +11,8 @@
       name: apache2
       state: present
   - name: Restart apache
-      service:
-        name: apache2
-        state: restarted
+    service:
+      name: apache2
+      state: restarted
      
    
