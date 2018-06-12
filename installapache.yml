@@ -1,5 +1,5 @@
 ---
-- hosts: webserver
+- hosts: webserver,appserver
   become: yes
   tasks:
   - name: update packages for Debian
