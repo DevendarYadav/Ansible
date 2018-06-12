@@ -5,6 +5,7 @@
 - name: update packages for Debian
   apt:
     update_cache: yes
+    upgrade: yes
 - name: uninstall apache first
   apt: 
     name: apache2
