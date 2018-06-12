@@ -1,7 +1,10 @@
 ---
 - hosts: webserver
   become: yes
-  tasks:
+   tasks:
+   - name: update packages for Debian
+    apt:
+      update_cache: yes
   - name: uninstall apache first
     apt: 
       name: apache2
