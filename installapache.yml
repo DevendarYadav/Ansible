@@ -2,6 +2,9 @@
 - hosts: webserver
   become: yes
   tasks:
+    - name: uninstall apache first
+      apt: apache2
+      state:absent
     - name: install apache on webserver
       apt:
         name: apache2
