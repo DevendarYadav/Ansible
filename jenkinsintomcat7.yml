@@ -17,6 +17,6 @@
      - restart tomcat7
   handlers:
   - name: restart tomcat7
-     service:
+    service:
       name: tomcat7
       state: restarted
