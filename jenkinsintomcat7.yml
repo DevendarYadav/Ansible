@@ -8,13 +8,13 @@
   - name: "install tomcat7"
     apt:
       name: tomcat7
-       state: present
+      state: present
   - name: download jenkins from web
      get_url:
        dest: /var/lib/tomcat7/webapps/jenkins.war
        url: http://mirrors.jenkins.io/war/latest/jenkins.war
      notify:
-	 - restart tomcat7
+     - restart tomcat7
   handlers:
   - name: restart tomcat7
      service:
